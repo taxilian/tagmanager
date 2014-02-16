@@ -30,7 +30,7 @@
 
 @tagInverseText:        #ccc;
 @tagInverseBackground:  @gray;
-@tagInverseBorder:      @grayDark;
+@tagInverseBorder:      @gray-dark;
 
 @tagDisabledText:       #aaa;
 @tagDisabledBackground: #e6e6e6;
@@ -59,8 +59,8 @@
   border: @tagBorder 1px solid;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   display: inline-block;
-  border-radius: @borderRadiusSmall;
-  font-family: @sansFontFamily;
+  border-radius: @border-radius-small;
+  font-family: @font-family-sans-serif;
   font-size: @tagFontSize;
   margin: 0 @tagMargin @tagMargin 0;
   padding: @tagPadding;
@@ -123,12 +123,12 @@
 
   &.tm-tag-large {
     font-size: @tagFontSizeLarge;
-    border-radius: @baseBorderRadius;
+    border-radius: @border-radius-base;
     padding: 11px 7px;
   }
   &.tm-tag-small {
     font-size: @tagFontSizeSmall;
-    border-radius: @borderRadiusSmall;
+    border-radius: @border-radius-small;
     padding: 2px 4px;
   }
   &.tm-tag-mini {
@@ -141,7 +141,7 @@
   // -------------------------
 
   &.tm-tag-plain {
-    color: @textColor;
+    color: @text-color;
     box-shadow: none;
     background: none;
     border: none;
@@ -171,8 +171,8 @@ input[type="text"].tm-input {
 // -------------------------
 
 .control-group.tm-group {
-  margin-bottom: (@baseLineHeight / 2) - @tagMargin;
+  margin-bottom: (@line-height-base / 2) - @tagMargin;
 }
 .form-horizontal .control-group.tm-group {
-  margin-bottom: @baseLineHeight - @tagMargin;
+  margin-bottom: @line-height-base - @tagMargin;
 }
